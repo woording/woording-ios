@@ -1,0 +1,4 @@
+**/Pods/
+*.xccheckout
+*.xcuserstate
+*.moved-aside
