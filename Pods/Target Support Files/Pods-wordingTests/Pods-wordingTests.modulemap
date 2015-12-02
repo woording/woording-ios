@@ -1,6 +1,0 @@
-framework module Pods_wordingTests {
-  umbrella header "Pods-wordingTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
