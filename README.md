@@ -3,7 +3,7 @@ woording-ios
 
 ##How to use
 You'll need CocoaPods, which you can install using `sudo gem install cocoapods`.  
-After that, you'll need to `cd` into this project and run `pod install:
+After that, you'll need to `cd` into this project and run `pod` install:
 ```bash
 cd woording-ios
 pod install
