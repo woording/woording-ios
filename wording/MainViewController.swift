@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     
 
@@ -18,23 +18,31 @@ class ViewController: UIViewController {
         let translation1: Translation = ["eng": "car", "dut": "auto"]
         let translation2: Translation = ["eng": "cer", "dut": "auto"]
         
-        print(translation1["eng"])
-        print(translation1["eng"]!)
-        print(translation1["bulg"])
+     //   print(translation1["eng"])
+      //  print(translation1["eng"]!)
+      //  print(translation1["bulg"])
         
-        print(translationIsCorrect(translation1))
-        print(translationIsCorrect(translation2))
+    //    print(translationIsCorrect(translation1))
+       // print(translationIsCorrect(translation2))
         
         let wordingService = WordingService()
         
         wordingService.getUser("cor") {
             json in
-            print(json)
+           print(json["lists"].arrayObject!)
+            //printing the contents of the list
+            
+            
         }
-        wordingService.getList("cor", listname: "engelse_woorden") {
+       
+        
+        
+        
+        //get list example
+        /* wordingService.getList("cor", listname: "engelse_woorden") {
             json in
             print(json)
-        }
+        }*/
         
         
     }
