@@ -11,5 +11,5 @@ import Foundation
 class Settings {
     let ip = "http://api.woording.com/"
     let name = "Cor"
-
+    let lists = []
 }
