@@ -8,24 +8,15 @@
 
 import UIKit
 import SwiftyJSON
+
 class LoginViewController : UIViewController {
     
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
-    override func viewDidLoad() {
-        
-        
-        func validateCredentials(username username:String, password: String) {
-            
-            //do that JSON shit where you pass in the Dictionary of the creds 
-            
-            // if (login == sucessful) {   shouldSignIn() }
-            
-        }
-       
+    @IBAction func loginButtonPressed(sender: AnyObject) {
+        let password: String? = passwordField.text
+        print(password)
     }
-
     
-    func addBlurEffect() {
-        
-    }
 }

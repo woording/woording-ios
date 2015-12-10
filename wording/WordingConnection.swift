@@ -13,6 +13,8 @@ class WordingConnection {
     
     var settings: Settings!
     var token: String?
+    var username: String? = nil
+    var password: String? = nil
     
     init() {
         self.settings = Settings()
@@ -41,11 +43,15 @@ class WordingConnection {
             request.addValue("application/json", forHTTPHeaderField: "Accept")
             
             // Set up the HTTP Body and fill it with the required data
-            let params = ["username": "cor", "password": "Hunter2"]
-            do {
-                request.HTTPBody = try JSON(params).rawData()
-            } catch {
-                print(error)
+            
+            // Check if credentials are present
+            if let username = self.username, password = self.username {
+                let params = ["username": username, "password": password]
+                do {
+                    request.HTTPBody = try JSON(params).rawData()
+                } catch {
+                    print(error)
+                }
             }
             
             // Create a NSUrlSessionDataTask

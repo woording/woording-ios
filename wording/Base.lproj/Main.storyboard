@@ -58,6 +58,7 @@
                                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="loginButtonPressed:" destination="soR-pw-sbR" eventType="touchUpInside" id="nzl-po-fRS"/>
                                                         <segue destination="BYZ-38-t0r" kind="presentation" id="tvz-ms-5tb"/>
                                                     </connections>
                                                 </button>
@@ -103,6 +104,10 @@
                             <constraint firstItem="RVD-fB-DYe" firstAttribute="centerX" secondItem="5cG-la-tvv" secondAttribute="centerX" id="z1B-4H-1Q4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="avE-2t-cjD" id="adE-5d-FUk"/>
+                        <outlet property="usernameField" destination="zb7-8H-IBo" id="4mp-Qn-MXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imc-2L-1aJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="227"/>
+            <point key="canvasLocation" x="609" y="245"/>
         </scene>
     </scenes>
     <resources>
