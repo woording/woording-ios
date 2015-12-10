@@ -10,13 +10,8 @@ import UIKit
 import SwiftyJSON
 class LoginViewController : UIViewController {
     
+    
     override func viewDidLoad() {
-        //check here if user would like to be auto signed in
-        
-        
-        
-        // if (autologin == yes) {      continue login         }
-        
         
         
         func validateCredentials(username username:String, password: String) {
@@ -29,4 +24,8 @@ class LoginViewController : UIViewController {
        
     }
 
+    
+    func addBlurEffect() {
+        
+    }
 }

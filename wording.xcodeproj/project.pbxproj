@@ -21,7 +21,7 @@
 		87B5C80A1BF60EC5001FFDBE /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B5C8091BF60EC5001FFDBE /* TranslationList.swift */; };
 		87F2621C1BDF9C4300FFC011 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2621B1BDF9C4300FFC011 /* Translation.swift */; };
 		939C5041CA8F03EC6BB16761 /* Pods_wordingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40317586E5B49F362D88D53F /* Pods_wordingTests.framework */; };
-		D08E266C1C1986D200CBF7E4 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E266B1C1986D200CBF7E4 /* loginViewController.swift */; };
+		D08E266C1C1986D200CBF7E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E266B1C1986D200CBF7E4 /* LoginViewController.swift */; };
 		DB24FC248CF67D45E38D49D0 /* Pods_wording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2CAD4132ABD9A41CB74B12 /* Pods_wording.framework */; };
 		F2A4AD7F6C560C30DD2385EE /* Pods_wordingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8046370CC59E3120DA671675 /* Pods_wordingUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,7 +72,7 @@
 		87F2621B1BDF9C4300FFC011 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		9A6B2C81DC779A7B94019231 /* Pods-wordingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wordingTests/Pods-wordingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B06CCF531ABE54A729A2DBEA /* Pods-wordingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wordingTests/Pods-wordingTests.release.xcconfig"; sourceTree = "<group>"; };
-		D08E266B1C1986D200CBF7E4 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		D08E266B1C1986D200CBF7E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				87B5C8051BF538B4001FFDBE /* WordingConnection.swift */,
 				879C2D0F1BE0394B0074EEF7 /* WordingService.swift */,
 				8735618E1BB1D66E0099B9D1 /* MainViewController.swift */,
-				D08E266B1C1986D200CBF7E4 /* loginViewController.swift */,
+				D08E266B1C1986D200CBF7E4 /* LoginViewController.swift */,
 				879C2D111BE039520074EEF7 /* Settings.swift */,
 				873561901BB1D66E0099B9D1 /* Main.storyboard */,
 				873561931BB1D66E0099B9D1 /* Assets.xcassets */,
@@ -463,7 +463,7 @@
 				87F2621C1BDF9C4300FFC011 /* Translation.swift in Sources */,
 				879C2D121BE039520074EEF7 /* Settings.swift in Sources */,
 				87B5C8081BF5D51E001FFDBE /* User.swift in Sources */,
-				D08E266C1C1986D200CBF7E4 /* loginViewController.swift in Sources */,
+				D08E266C1C1986D200CBF7E4 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
