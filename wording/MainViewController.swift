@@ -92,14 +92,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
 //Table View 
      func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       let spot =  tableView.cellForRowAtIndexPath(indexPath)?.center
+      // let spot =  tableView.cellForRowAtIndexPath(indexPath)?.frame.origin
         
-
-        UIView.animateWithDuration(0.5, animations: {
-            self.optionView.frame.origin = spot!
-            //self.optionView.frame.origin.x  = 140 + self.optionView.frame.origin.x
-        })
-    
     }
     
     

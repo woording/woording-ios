@@ -321,24 +321,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRU-cF-vCB">
-                                <rect key="frame" x="291" y="28" width="309" height="46"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMx-vx-CRj">
-                                        <rect key="frame" x="35" y="8" width="57" height="30"/>
-                                        <state key="normal" title="Practice"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-Sh-5Jr">
-                                        <rect key="frame" x="124" y="8" width="71" height="30"/>
-                                        <state key="normal" title="Flash card"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txW-69-D5a">
-                                        <rect key="frame" x="250" y="8" width="32" height="30"/>
-                                        <state key="normal" title="Quiz"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -352,7 +334,6 @@
                     <connections>
                         <outlet property="listTable" destination="sFq-DL-9tm" id="zFl-NM-q0O"/>
                         <outlet property="nameLabel" destination="cCx-gQ-p7g" id="RAw-0I-5g2"/>
-                        <outlet property="optionView" destination="bRU-cF-vCB" id="llH-Md-19h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
