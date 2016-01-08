@@ -11,8 +11,28 @@ import RealmSwift
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
     
+    var listsArchive : [String : [String:String]] = ["listName" : ["word1": "trans1", "word2" : "trans2"]]
+    var listNames : [String]
+    
 
     @IBOutlet weak var listTable: UITableView!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +41,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         listTable.dataSource = self
         
+        //read Lists from Plist.
+        //recreate listArchive from plist. 
+        
+        // listArchive = [READ FROM PLIST]
+        
+        
+        
+        
+        //assemple array of names for data table source
+        for list in listsArchive {
+            self.listNames.append( list.0 )
+        }
                
         
         //get list example
@@ -44,14 +76,14 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
 //Table View 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return lists.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell {
         let cell = UITableViewCell()
         cell.backgroundColor = UIColor.clearColor()
         let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
-        label.text = "    Hello Man"
+        label.text = self.lists.
         cell.addSubview(label)
         return cell
     }
