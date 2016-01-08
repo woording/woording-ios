@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>listName1 - 2</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 3</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 4</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 5</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 6</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 7</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 8</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 9</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 10</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 11</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 12</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 13</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 14</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1 - 15</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName1</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+	<key>listName2</key>
+	<dict>
+		<key>word1</key>
+		<string>Trans1</string>
+		<key>word2</key>
+		<string>Trans2</string>
+	</dict>
+</dict>
+</plist>
