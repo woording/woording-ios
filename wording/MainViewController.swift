@@ -10,15 +10,21 @@ import UIKit
 import RealmSwift
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
+    typealias List = (Lang1: [String], Lang2:  [String])
+    var selectedList : List = ([""], [""])
+    
+    
+    
+    
     
     var listsArchive : [String : [String:String]] = ["defaut" : ["word1": "trans1", "word2" : "trans2"]]
     var listNames : [String] = []
     var name : String = "" 
 
 
-    @IBOutlet weak var optionView: UIView!
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet weak var listTable: UITableView!
+  //  @IBOutlet weak var optionView: UIView!
+    @IBOutlet var nameLabel: UILabel! //welcome text
+    @IBOutlet weak var listTable: UITableView! //tableView for Lists
     
     
     
@@ -39,6 +45,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        selectedList.Lang1 = []
+        selectedList.Lang2 = []
          let wordingService = WordingService()
         
             self.nameLabel.text   = "Welcome, " + name
@@ -62,6 +71,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 //assemple array of names for data table source
 
                 listNames.append( list.0 )
+                listsArchive[list.0] = list.1 as! [String : String]
             }
         }
         
@@ -94,6 +104,32 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
      func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
       // let spot =  tableView.cellForRowAtIndexPath(indexPath)?.frame.origin
         
+        typealias List = (Lang1: [String], Lang2:  [String])
+        
+     
+       
+        
+    
+        
+        
+        
+        
+        
+       let listDict = listsArchive["\(listNames[indexPath.item])"]
+        print ("this one V")
+        print (listsArchive)
+        print(listNames[indexPath.indexAtPosition(0)])
+        for wordList in listDict!
+        {
+            selectedList.Lang1.append(wordList.0)
+            selectedList.Lang2.append(wordList.1)
+           print(wordList)
+        }
+        
+        
+        
+        
+        performSegueWithIdentifier("goToListInspector", sender: nil)
     }
     
     
@@ -137,6 +173,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
 
+//segue moves 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! ListInspectorView
+        
+        
+        if segue.identifier != nil { //check if there is an ID for the seg
+            
+            switch segue.identifier!{ //if there is an ID switch against these values
+            case "goToListInspector" :
+                print("assign list to inspector controller")
+               controller.inspectorList.Lang1 = selectedList.Lang1
+               controller.inspectorList.Lang2 = selectedList.Lang2
+                
+                
+                
+            case "that" : //never going to happen
+                print("that")
+            default :    //this either.
+                print("what")
+            }
+        }
+    }
 
 }
 

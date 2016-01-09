@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-64" y="245"/>
         </scene>
-        <!--View Controller-->
+        <!--List Inspector View-->
         <scene sceneID="G9Y-xM-j8m">
             <objects>
-                <viewController id="0e5-2b-qcm" sceneMemberID="viewController">
+                <viewController id="0e5-2b-qcm" customClass="ListInspectorView" customModule="wording" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HaF-ht-XDh"/>
                         <viewControllerLayoutGuide type="bottom" id="EQW-AP-z8b"/>
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clX-k3-1rI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="245"/>
+            <point key="canvasLocation" x="1332" y="245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kJe-xA-Wnt">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uC-Nz-T4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="245"/>
+            <point key="canvasLocation" x="2007" y="256"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -237,6 +237,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99608105421066284" green="0.99620026350021362" blue="0.99227195978164673" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="0e5-2b-qcm" kind="show" identifier="goToListInspector" id="VzZ-at-CYM"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="P6c-LP-KQx">
                                         <rect key="frame" x="0.0" y="160" width="786" height="44"/>
