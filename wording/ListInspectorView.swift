@@ -33,6 +33,8 @@ class ListInspectorView : UIViewController {
     
     
     override func viewDidLoad() {
+        print(inspectorList.Lang2)
+        print(inspectorList.Lang1)
        
         switch currentMode {
         case mode.display :
@@ -45,6 +47,8 @@ class ListInspectorView : UIViewController {
         }
         
     }
+    
+    
     
     
     

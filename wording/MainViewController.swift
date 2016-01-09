@@ -116,9 +116,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         
        let listDict = listsArchive["\(listNames[indexPath.item])"]
-        print ("this one V")
-        print (listsArchive)
-        print(listNames[indexPath.indexAtPosition(0)])
+    
         for wordList in listDict!
         {
             selectedList.Lang1.append(wordList.0)
