@@ -5,7 +5,7 @@
 //  Created by Cor Pruijs on 09-01-16.
 //  Copyright © 2016 Woording. All rights reserved.
 //
-
+//This is the delegate 
 import UIKit
 
 @UIApplicationMain
