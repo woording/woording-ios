@@ -18,6 +18,14 @@
 		87AE06221C41610E006C27E4 /* woording_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE06211C41610E006C27E4 /* woording_iosTests.swift */; };
 		87AE062D1C41610E006C27E4 /* woording_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */; };
 		87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */; };
+		D09ECC491C42564600E81EE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC471C42564600E81EE8 /* Podfile */; };
+		D09ECC4A1C42564600E81EE8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC481C42564600E81EE8 /* README.md */; };
+		D09ECC4C1C4256B500E81EE8 /* Lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC4B1C4256B500E81EE8 /* Lists.plist */; };
+		D09ECC511C4256CB00E81EE8 /* ListInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */; };
+		D09ECC521C4256CB00E81EE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */; };
+		D09ECC531C4256CB00E81EE8 /* WordingConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */; };
+		D09ECC541C4256CB00E81EE8 /* WordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC501C4256CB00E81EE8 /* WordingService.swift */; };
+		D377613C47E9F470E462256E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D6DC58D17BF1CAB4167BB4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194179AED617886921984BDC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		876955BA1C419CFC00178A52 /* AccountCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCredentials.plist; sourceTree = "<group>"; };
 		876955BC1C419DCD00178A52 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		87AE06071C41610E006C27E4 /* woording-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "woording-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +64,15 @@
 		87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woording_iosUITests.swift; sourceTree = "<group>"; };
 		87AE062E1C41610E006C27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		98D6DC58D17BF1CAB4167BB4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09ECC471C42564600E81EE8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D09ECC481C42564600E81EE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D09ECC4B1C4256B500E81EE8 /* Lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lists.plist; sourceTree = "<group>"; };
+		D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInspectorView.swift; sourceTree = "<group>"; };
+		D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordingConnection.swift; sourceTree = "<group>"; };
+		D09ECC501C4256CB00E81EE8 /* WordingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordingService.swift; sourceTree = "<group>"; };
+		FFBC9B4E93B920948040B5A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D377613C47E9F470E462256E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B38E72E1FE5610FEF5071B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFBC9B4E93B920948040B5A6 /* Pods.debug.xcconfig */,
+				194179AED617886921984BDC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		87AE05FE1C41610E006C27E4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,10 @@
 				87AE06201C41610E006C27E4 /* woording-iosTests */,
 				87AE062B1C41610E006C27E4 /* woording-iosUITests */,
 				87AE06081C41610E006C27E4 /* Products */,
+				D09ECC471C42564600E81EE8 /* Podfile */,
+				D09ECC481C42564600E81EE8 /* README.md */,
+				5B38E72E1FE5610FEF5071B9 /* Pods */,
+				C4D33391D2ED7FBC8562BEF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +137,15 @@
 		87AE06091C41610E006C27E4 /* woording-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D09ECC4B1C4256B500E81EE8 /* Lists.plist */,
 				87AE060A1C41610E006C27E4 /* AppDelegate.swift */,
 				87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */,
+				D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */,
+				D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */,
 				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
 				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
+				D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */,
+				D09ECC501C4256CB00E81EE8 /* WordingService.swift */,
 				87AE06101C41610E006C27E4 /* Main.storyboard */,
 				87AE06131C41610E006C27E4 /* Assets.xcassets */,
 				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
@@ -137,6 +174,14 @@
 			path = "woording-iosUITests";
 			sourceTree = "<group>";
 		};
+		C4D33391D2ED7FBC8562BEF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98D6DC58D17BF1CAB4167BB4 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87AE06311C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-ios" */;
 			buildPhases = (
+				02DF0E59B986B2EF1CF75E9B /* Check Pods Manifest.lock */,
 				87AE06031C41610E006C27E4 /* Sources */,
 				87AE06041C41610E006C27E4 /* Frameworks */,
 				87AE06051C41610E006C27E4 /* Resources */,
+				C478BD529FE9DEC77FB55D70 /* Embed Pods Frameworks */,
+				685E5C5AE43CE4F2A7B73283 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09ECC491C42564600E81EE8 /* Podfile in Resources */,
 				87AE06171C41610E006C27E4 /* LaunchScreen.storyboard in Resources */,
+				D09ECC4C1C4256B500E81EE8 /* Lists.plist in Resources */,
 				876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */,
 				87AE06141C41610E006C27E4 /* Assets.xcassets in Resources */,
 				87AE06121C41610E006C27E4 /* Main.storyboard in Resources */,
@@ -267,14 +317,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02DF0E59B986B2EF1CF75E9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		685E5C5AE43CE4F2A7B73283 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C478BD529FE9DEC77FB55D70 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87AE06031C41610E006C27E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09ECC541C4256CB00E81EE8 /* WordingService.swift in Sources */,
+				D09ECC4A1C42564600E81EE8 /* README.md in Sources */,
 				876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
+				D09ECC531C4256CB00E81EE8 /* WordingConnection.swift in Sources */,
 				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
+				D09ECC521C4256CB00E81EE8 /* LoginViewController.swift in Sources */,
+				D09ECC511C4256CB00E81EE8 /* ListInspectorView.swift in Sources */,
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
 				87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */,
 			);
@@ -416,6 +519,7 @@
 		};
 		87AE06321C41610E006C27E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBC9B4E93B920948040B5A6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "woording-ios/Info.plist";
@@ -427,6 +531,7 @@
 		};
 		87AE06331C41610E006C27E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194179AED617886921984BDC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "woording-ios/Info.plist";
