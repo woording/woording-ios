@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876955BA1C419CFC00178A52 /* AccountCredentials.plist */; };
+		876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876955BC1C419DCD00178A52 /* AccountManager.swift */; };
+		87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060A1C41610E006C27E4 /* AppDelegate.swift */; };
+		87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060C1C41610E006C27E4 /* MasterViewController.swift */; };
+		87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060E1C41610E006C27E4 /* DetailViewController.swift */; };
+		87AE06121C41610E006C27E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AE06101C41610E006C27E4 /* Main.storyboard */; };
+		87AE06141C41610E006C27E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AE06131C41610E006C27E4 /* Assets.xcassets */; };
+		87AE06171C41610E006C27E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */; };
+		87AE06221C41610E006C27E4 /* woording_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE06211C41610E006C27E4 /* woording_iosTests.swift */; };
+		87AE062D1C41610E006C27E4 /* woording_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */; };
+		87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87AE061E1C41610E006C27E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87AE05FF1C41610E006C27E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87AE06061C41610E006C27E4;
+			remoteInfo = "woording-ios";
+		};
+		87AE06291C41610E006C27E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87AE05FF1C41610E006C27E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87AE06061C41610E006C27E4;
+			remoteInfo = "woording-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		876955BA1C419CFC00178A52 /* AccountCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCredentials.plist; sourceTree = "<group>"; };
+		876955BC1C419DCD00178A52 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		87AE06071C41610E006C27E4 /* woording-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "woording-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AE060A1C41610E006C27E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87AE060C1C41610E006C27E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		87AE060E1C41610E006C27E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		87AE06111C41610E006C27E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87AE06131C41610E006C27E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87AE06161C41610E006C27E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87AE06181C41610E006C27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AE061D1C41610E006C27E4 /* woording-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "woording-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AE06211C41610E006C27E4 /* woording_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woording_iosTests.swift; sourceTree = "<group>"; };
+		87AE06231C41610E006C27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AE06281C41610E006C27E4 /* woording-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "woording-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woording_iosUITests.swift; sourceTree = "<group>"; };
+		87AE062E1C41610E006C27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87AE06041C41610E006C27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE061A1C41610E006C27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE06251C41610E006C27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87AE05FE1C41610E006C27E4 = {
+			isa = PBXGroup;
+			children = (
+				87AE06091C41610E006C27E4 /* woording-ios */,
+				87AE06201C41610E006C27E4 /* woording-iosTests */,
+				87AE062B1C41610E006C27E4 /* woording-iosUITests */,
+				87AE06081C41610E006C27E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87AE06081C41610E006C27E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87AE06071C41610E006C27E4 /* woording-ios.app */,
+				87AE061D1C41610E006C27E4 /* woording-iosTests.xctest */,
+				87AE06281C41610E006C27E4 /* woording-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87AE06091C41610E006C27E4 /* woording-ios */ = {
+			isa = PBXGroup;
+			children = (
+				87AE060A1C41610E006C27E4 /* AppDelegate.swift */,
+				87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */,
+				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
+				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
+				87AE06101C41610E006C27E4 /* Main.storyboard */,
+				87AE06131C41610E006C27E4 /* Assets.xcassets */,
+				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
+				87AE06181C41610E006C27E4 /* Info.plist */,
+				876955BA1C419CFC00178A52 /* AccountCredentials.plist */,
+				876955BC1C419DCD00178A52 /* AccountManager.swift */,
+			);
+			path = "woording-ios";
+			sourceTree = "<group>";
+		};
+		87AE06201C41610E006C27E4 /* woording-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				87AE06211C41610E006C27E4 /* woording_iosTests.swift */,
+				87AE06231C41610E006C27E4 /* Info.plist */,
+			);
+			path = "woording-iosTests";
+			sourceTree = "<group>";
+		};
+		87AE062B1C41610E006C27E4 /* woording-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */,
+				87AE062E1C41610E006C27E4 /* Info.plist */,
+			);
+			path = "woording-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87AE06061C41610E006C27E4 /* woording-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AE06311C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-ios" */;
+			buildPhases = (
+				87AE06031C41610E006C27E4 /* Sources */,
+				87AE06041C41610E006C27E4 /* Frameworks */,
+				87AE06051C41610E006C27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "woording-ios";
+			productName = "woording-ios";
+			productReference = 87AE06071C41610E006C27E4 /* woording-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87AE061C1C41610E006C27E4 /* woording-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AE06341C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-iosTests" */;
+			buildPhases = (
+				87AE06191C41610E006C27E4 /* Sources */,
+				87AE061A1C41610E006C27E4 /* Frameworks */,
+				87AE061B1C41610E006C27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87AE061F1C41610E006C27E4 /* PBXTargetDependency */,
+			);
+			name = "woording-iosTests";
+			productName = "woording-iosTests";
+			productReference = 87AE061D1C41610E006C27E4 /* woording-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87AE06271C41610E006C27E4 /* woording-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AE06371C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-iosUITests" */;
+			buildPhases = (
+				87AE06241C41610E006C27E4 /* Sources */,
+				87AE06251C41610E006C27E4 /* Frameworks */,
+				87AE06261C41610E006C27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87AE062A1C41610E006C27E4 /* PBXTargetDependency */,
+			);
+			name = "woording-iosUITests";
+			productName = "woording-iosUITests";
+			productReference = 87AE06281C41610E006C27E4 /* woording-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87AE05FF1C41610E006C27E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Woording;
+				TargetAttributes = {
+					87AE06061C41610E006C27E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9RS3Y87D23;
+					};
+					87AE061C1C41610E006C27E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9RS3Y87D23;
+						TestTargetID = 87AE06061C41610E006C27E4;
+					};
+					87AE06271C41610E006C27E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9RS3Y87D23;
+						TestTargetID = 87AE06061C41610E006C27E4;
+					};
+				};
+			};
+			buildConfigurationList = 87AE06021C41610E006C27E4 /* Build configuration list for PBXProject "woording-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87AE05FE1C41610E006C27E4;
+			productRefGroup = 87AE06081C41610E006C27E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87AE06061C41610E006C27E4 /* woording-ios */,
+				87AE061C1C41610E006C27E4 /* woording-iosTests */,
+				87AE06271C41610E006C27E4 /* woording-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87AE06051C41610E006C27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AE06171C41610E006C27E4 /* LaunchScreen.storyboard in Resources */,
+				876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */,
+				87AE06141C41610E006C27E4 /* Assets.xcassets in Resources */,
+				87AE06121C41610E006C27E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE061B1C41610E006C27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE06261C41610E006C27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87AE06031C41610E006C27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */,
+				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
+				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
+				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
+				87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE06191C41610E006C27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AE06221C41610E006C27E4 /* woording_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE06241C41610E006C27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AE062D1C41610E006C27E4 /* woording_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87AE061F1C41610E006C27E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87AE06061C41610E006C27E4 /* woording-ios */;
+			targetProxy = 87AE061E1C41610E006C27E4 /* PBXContainerItemProxy */;
+		};
+		87AE062A1C41610E006C27E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87AE06061C41610E006C27E4 /* woording-ios */;
+			targetProxy = 87AE06291C41610E006C27E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87AE06101C41610E006C27E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87AE06111C41610E006C27E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87AE06161C41610E006C27E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87AE062F1C41610E006C27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87AE06301C41610E006C27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87AE06321C41610E006C27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "woording-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87AE06331C41610E006C27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "woording-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87AE06351C41610E006C27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "woording-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woording-ios.app/woording-ios";
+			};
+			name = Debug;
+		};
+		87AE06361C41610E006C27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "woording-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woording-ios.app/woording-ios";
+			};
+			name = Release;
+		};
+		87AE06381C41610E006C27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "woording-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "woording-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		87AE06391C41610E006C27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "woording-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woording.woording-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "woording-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87AE06021C41610E006C27E4 /* Build configuration list for PBXProject "woording-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AE062F1C41610E006C27E4 /* Debug */,
+				87AE06301C41610E006C27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AE06311C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AE06321C41610E006C27E4 /* Debug */,
+				87AE06331C41610E006C27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AE06341C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AE06351C41610E006C27E4 /* Debug */,
+				87AE06361C41610E006C27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AE06371C41610E006C27E4 /* Build configuration list for PBXNativeTarget "woording-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AE06381C41610E006C27E4 /* Debug */,
+				87AE06391C41610E006C27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87AE05FF1C41610E006C27E4 /* Project object */;
+}
