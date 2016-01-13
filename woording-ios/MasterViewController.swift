@@ -9,13 +9,13 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
+    
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
     
     let lists = ["Engelse woorden", "duitse woorden", "griekse onzin"]
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +25,7 @@ class MasterViewController: UITableViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
+        
         // addButton
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
@@ -37,20 +37,20 @@ class MasterViewController: UITableViewController {
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
-
+    
     
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
-
+    
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     // Add new object to objects
     func insertNewObject(sender: AnyObject) {
@@ -59,7 +59,7 @@ class MasterViewController: UITableViewController {
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
-
+    
     // MARK: - Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -78,47 +78,47 @@ class MasterViewController: UITableViewController {
                 // Add the back button
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
-
+                
             }
         }
     }
-
+    
     // MARK: - Table View
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lists.count
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
+        
         let list = lists[indexPath.row]
         cell.textLabel!.text = list
         return cell
     }
-
+    
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
+    
     override func tableView(tableView: UITableView,
-            commitEditingStyle editingStyle: UITableViewCellEditingStyle,
-            forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if editingStyle == .Delete {
-            objects.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath) {
             
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
+            if editingStyle == .Delete {
+                objects.removeAtIndex(indexPath.row)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                
+            } else if editingStyle == .Insert {
+                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+            }
     }
-
-
+    
+    
 }
 

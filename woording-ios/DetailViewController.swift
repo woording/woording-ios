@@ -9,16 +9,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    
     var currentList: String? {
         didSet {
             // Configure the view after the currentList is changed
             self.configureView()
         }
     }
-
+    
     func configureView() {
         
         // Update the detailview to show the correct list
@@ -32,17 +32,17 @@ class DetailViewController: UIViewController {
             }
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
 

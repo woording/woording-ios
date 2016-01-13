@@ -18,7 +18,7 @@ class AccountManager {
             return nil
         }
     }
-    
+
     static var password: String? {
         if let path = NSBundle.mainBundle().pathForResource("AccountCredentials", ofType: "plist") {
             let dictionary = NSDictionary(contentsOfFile: path)
