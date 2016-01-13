@@ -52,9 +52,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
       
-        
-        let list = currentList.Lang1[indexPath.item]
-        let trans = currentList.Lang2[indexPath.item]
+        let index = indexPath.item
+        let list = currentList.Lang1[index]
+        let trans = currentList.Lang2[index]
         cell.textLabel!.text = list + "    " + trans
         return cell
     }
