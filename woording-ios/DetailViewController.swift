@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])

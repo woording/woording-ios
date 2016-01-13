@@ -56,12 +56,8 @@ class MasterViewController: UITableViewController {
         print(AccountManager.name)
         print(AccountManager.password)
         
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        
-        // addButton
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+      
+    
         self.title = "Lists"
         
         // Set the detailViewController property to the correct detailViewController
@@ -151,7 +147,19 @@ class MasterViewController: UITableViewController {
                 // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
             }
     }
-    
-    
-}
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let quiz = UITableViewRowAction(style: .Normal, title: "quiz") { (action, indexPath) in
+            print("quiz")
+        }
+        
+        let practice = UITableViewRowAction(style: .Normal, title: "practice") { (action, indexPath) in
+            print("practice")
+        }
+        
+        
+        quiz.backgroundColor = UIColor.blueColor()
+        practice.backgroundColor = UIColor.greenColor()
+        return [quiz, practice]
+    }
 
+}
