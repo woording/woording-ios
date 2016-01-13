@@ -53,8 +53,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = UITableViewCell()
       
         
-        let list = "stuff"
-        cell.textLabel!.text = list
+        let list = currentList.Lang1[indexPath.item]
+        let trans = currentList.Lang2[indexPath.item]
+        cell.textLabel!.text = list + "    " + trans
         return cell
     }
     
