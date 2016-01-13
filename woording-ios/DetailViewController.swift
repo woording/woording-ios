@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
     var currentList: WordList = ("name", [""], [""]){
@@ -35,6 +36,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listTableView.dataSource = self
+       // listTableView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }
@@ -43,6 +46,29 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //table view
+     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
     
+     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        
+        let list = "stuff"
+        cell.textLabel!.text = list
+        return cell
+    }
+    
+     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    
+
 }
 
