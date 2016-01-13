@@ -12,12 +12,45 @@ class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
+    typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
+    var allWordLists : [WordList] = []
     
-    let lists = ["Engelse woorden", "duitse woorden", "griekse onzin"]
+    var username : String = ""
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        allWordLists.append(("name", ["sdfsdf"], ["sdfsdf"]))
+        // read lists from plist
+        if let path = NSBundle.mainBundle().pathForResource("Lists", ofType: "plist"), dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+            var templist : WordList
+            var tempLang1 : [String] = []
+            var tempLang2 : [String] = []
+            for list in dict {
+                
+                
+                print(list)
+                
+                
+                let listDict = list.1 as! [String : String]
+                for word in listDict
+                {
+                    tempLang1.append(word.0)
+                    tempLang2.append(word.1)
+                }
+                templist.name = list.0
+                templist.Lang1 = tempLang1
+                templist.Lang2 = tempLang2
+                allWordLists.append(templist)
+                
+            }
+        }
+        
         
         // print username and password, as a test
         print(AccountManager.name)
@@ -69,7 +102,7 @@ class MasterViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 // get the list corresponding to the row
-                let list = lists[indexPath.row]
+                let list = allWordLists[indexPath.row]
                 
                 // get the DetailViewController
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
@@ -90,13 +123,13 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lists.count
+        return allWordLists.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        let list = lists[indexPath.row]
+        let list = allWordLists[indexPath.row].name
         cell.textLabel!.text = list
         return cell
     }
