@@ -21,10 +21,6 @@
 		D09ECC491C42564600E81EE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC471C42564600E81EE8 /* Podfile */; };
 		D09ECC4A1C42564600E81EE8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC481C42564600E81EE8 /* README.md */; };
 		D09ECC4C1C4256B500E81EE8 /* Lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC4B1C4256B500E81EE8 /* Lists.plist */; };
-		D09ECC511C4256CB00E81EE8 /* ListInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */; };
-		D09ECC521C4256CB00E81EE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */; };
-		D09ECC531C4256CB00E81EE8 /* WordingConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */; };
-		D09ECC541C4256CB00E81EE8 /* WordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC501C4256CB00E81EE8 /* WordingService.swift */; };
 		D377613C47E9F470E462256E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D6DC58D17BF1CAB4167BB4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,10 +64,6 @@
 		D09ECC471C42564600E81EE8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D09ECC481C42564600E81EE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D09ECC4B1C4256B500E81EE8 /* Lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lists.plist; sourceTree = "<group>"; };
-		D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInspectorView.swift; sourceTree = "<group>"; };
-		D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordingConnection.swift; sourceTree = "<group>"; };
-		D09ECC501C4256CB00E81EE8 /* WordingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordingService.swift; sourceTree = "<group>"; };
 		FFBC9B4E93B920948040B5A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,12 +132,8 @@
 				D09ECC4B1C4256B500E81EE8 /* Lists.plist */,
 				87AE060A1C41610E006C27E4 /* AppDelegate.swift */,
 				87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */,
-				D09ECC4E1C4256CB00E81EE8 /* LoginViewController.swift */,
-				D09ECC4D1C4256CB00E81EE8 /* ListInspectorView.swift */,
 				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
 				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
-				D09ECC4F1C4256CB00E81EE8 /* WordingConnection.swift */,
-				D09ECC501C4256CB00E81EE8 /* WordingService.swift */,
 				87AE06101C41610E006C27E4 /* Main.storyboard */,
 				87AE06131C41610E006C27E4 /* Assets.xcassets */,
 				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
@@ -370,14 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09ECC541C4256CB00E81EE8 /* WordingService.swift in Sources */,
 				D09ECC4A1C42564600E81EE8 /* README.md in Sources */,
 				876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
-				D09ECC531C4256CB00E81EE8 /* WordingConnection.swift in Sources */,
 				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
-				D09ECC521C4256CB00E81EE8 /* LoginViewController.swift in Sources */,
-				D09ECC511C4256CB00E81EE8 /* ListInspectorView.swift in Sources */,
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
 				87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */,
 			);
