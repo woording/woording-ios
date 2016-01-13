@@ -99,7 +99,7 @@ class MasterViewController: UITableViewController {
                 
                 // get the list corresponding to the row
                 let list = allWordLists[indexPath.row]
-                
+                //PRINT(LIST)
                 // get the DetailViewController
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.currentList = list
