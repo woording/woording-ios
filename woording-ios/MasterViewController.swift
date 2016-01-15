@@ -12,16 +12,9 @@ class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
+    
     typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
     var allWordLists : [WordList] = []
-    
-    var username : String = ""
-    
-    
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
