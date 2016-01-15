@@ -11,14 +11,9 @@ import UIKit
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var listTableView: UITableView!
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
     typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
-    var currentList: WordList = ("name", [""], [""]){
-        didSet {
-            // Configure the view after the currentList is changed
-            self.configureView()
-        }
-    }
+    var currentList: WordList = ("name", [""], [""])
     
     func configureView() {
         
@@ -28,16 +23,15 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Update the title of the viewController
         title = currentList.name
         
-        if let label = self.detailDescriptionLabel {
-            label.text = currentList.name
-        }
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(currentList)
         listTableView.dataSource = self
-       // listTableView.delegate = self
+        listTableView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }
@@ -48,25 +42,24 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     //table view
      func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return currentList.Lang1.count
     }
     
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        
-        let list = "stuff"
-        cell.textLabel!.text = list
+        let cell = UITableViewCell()
+      
+        let index = indexPath.item
+        let list = currentList.Lang1[index]
+        let trans = currentList.Lang2[index]
+        cell.textLabel!.text = list + "    " + trans
         return cell
     }
     
-     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
+
     
     
 
