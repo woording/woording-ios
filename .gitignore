@@ -31,4 +31,4 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 **/**/*.xcuserstate
-
+*.xcworkspace
