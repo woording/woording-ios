@@ -12,20 +12,16 @@ class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
+    
     typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
     var allWordLists : [WordList] = []
     
-    var username : String = ""
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         allWordLists.append(("name", ["sdfsdf"], ["sdfsdf"]))
+        
         // read lists from plist
         if let path = NSBundle.mainBundle().pathForResource("Lists", ofType: "plist"), dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
             var templist : WordList
@@ -147,15 +143,18 @@ class MasterViewController: UITableViewController {
                 // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
             }
     }
+    
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
         let quiz = UITableViewRowAction(style: .Normal, title: "quiz") { (action, indexPath) in
+            // Handle going to Quiz mode here
             print("quiz")
         }
         
         let practice = UITableViewRowAction(style: .Normal, title: "practice") { (action, indexPath) in
+            // Handle going to Practice mode here
             print("practice")
         }
-        
         
         quiz.backgroundColor = UIColor.blueColor()
         practice.backgroundColor = UIColor.greenColor()

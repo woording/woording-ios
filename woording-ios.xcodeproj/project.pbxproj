@@ -129,17 +129,13 @@
 		87AE06091C41610E006C27E4 /* woording-ios */ = {
 			isa = PBXGroup;
 			children = (
+				87BD11001C49B81A00C5C383 /* Store */,
+				87BD10FF1C49B7FF00C5C383 /* Views */,
+				87BD10FD1C49B7E700C5C383 /* Controllers */,
+				87BD10FE1C49B7F400C5C383 /* Helpers */,
 				D09ECC4B1C4256B500E81EE8 /* Lists.plist */,
-				87AE060A1C41610E006C27E4 /* AppDelegate.swift */,
-				87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */,
-				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
-				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
-				87AE06101C41610E006C27E4 /* Main.storyboard */,
 				87AE06131C41610E006C27E4 /* Assets.xcassets */,
-				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
 				87AE06181C41610E006C27E4 /* Info.plist */,
-				876955BA1C419CFC00178A52 /* AccountCredentials.plist */,
-				876955BC1C419DCD00178A52 /* AccountManager.swift */,
 			);
 			path = "woording-ios";
 			sourceTree = "<group>";
@@ -160,6 +156,42 @@
 				87AE062E1C41610E006C27E4 /* Info.plist */,
 			);
 			path = "woording-iosUITests";
+			sourceTree = "<group>";
+		};
+		87BD10FD1C49B7E700C5C383 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
+				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		87BD10FE1C49B7F400C5C383 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87AE060A1C41610E006C27E4 /* AppDelegate.swift */,
+				87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		87BD10FF1C49B7FF00C5C383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87AE06101C41610E006C27E4 /* Main.storyboard */,
+				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		87BD11001C49B81A00C5C383 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				876955BA1C419CFC00178A52 /* AccountCredentials.plist */,
+				876955BC1C419DCD00178A52 /* AccountManager.swift */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 		C4D33391D2ED7FBC8562BEF5 /* Frameworks */ = {
