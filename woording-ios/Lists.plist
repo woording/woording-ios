@@ -2,47 +2,74 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>dag</key>
+	<dict>
+		<key>lang1Locale</key>
+		<string>en</string>
+		<key>lang2Locale</key>
+		<string>du</string>
+		<key>lang2</key>
+		<array>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+		</array>
+		<key>lang1</key>
+		<array>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+		</array>
+	</dict>
+	<key>swag</key>
+	<dict>
+		<key>lang1Locale</key>
+		<string>en</string>
+		<key>lang2Locale</key>
+		<string>du</string>
+		<key>lang2</key>
+		<array>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+		</array>
+		<key>lang1</key>
+		<array>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+		</array>
+	</dict>
 	<key>listName</key>
 	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
-	</dict>
-	<key>listNa</key>
-	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
-	</dict>
-	<key>other list</key>
-	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
-	</dict>
-	<key>list1</key>
-	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
-	</dict>
-	<key>listName1</key>
-	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
-	</dict>
-	<key>listName2</key>
-	<dict>
-		<key>word1</key>
-		<string>Trans1</string>
-		<key>word2</key>
-		<string>Trans2</string>
+		<key>lang1Locale</key>
+		<string>en</string>
+		<key>lang2Locale</key>
+		<string>du</string>
+		<key>lang2</key>
+		<array>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+			<string>words </string>
+		</array>
+		<key>lang1</key>
+		<array>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+			<string>woords</string>
+		</array>
 	</dict>
 </dict>
 </plist>

@@ -12,8 +12,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var listTableView: UITableView!
     
-    typealias WordList = (name : String, Lang1 : [String], Lang2 :[String])
-    var currentList: WordList = ("name", [""], [""])
+    
+    typealias wordArray = (locale:String, words :[String])
+    typealias WordList = (name : String, lang1: wordArray, lang2:wordArray)
+
+    var currentList: WordList = ("name", ("this", [""]), ("this", [""]))
     
     func configureView() {
         
@@ -46,16 +49,16 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentList.Lang1.count
+        return currentList.lang1.words.count
     }
     
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
       
         let index = indexPath.item
-        let list = currentList.Lang1[index]
-        let trans = currentList.Lang2[index]
-        cell.textLabel!.text = list + "    " + trans
+        let word  = currentList.lang1.words[index]
+        let trans = currentList.lang2.words[index]
+        cell.textLabel!.text = word + "    " + trans
         return cell
     }
     
