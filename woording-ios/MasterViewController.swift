@@ -36,7 +36,7 @@ class MasterViewController: UITableViewController {
                 let lang1Words = list.value.valueForKey("lang1") as! [String]
                 let lang1Locale = list.value.valueForKey("lang1Locale") as! String
                 
-                var tempLang1 : wordArray = (lang1Locale, lang1Words)
+                let tempLang1 : wordArray = (lang1Locale, lang1Words)
                 
                 
                 
@@ -44,7 +44,7 @@ class MasterViewController: UITableViewController {
                 let lang2Words = list.value.valueForKey("lang2") as! [String]
                 let lang2Locale = list.value.valueForKey("lang2Locale") as! String
                 
-                var tempLang2 : wordArray = (lang2Locale, lang2Words)
+                let tempLang2 : wordArray = (lang2Locale, lang2Words)
                 
                 
                 let newList : WordList = (listName, tempLang1, tempLang2)
