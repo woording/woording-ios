@@ -1,19 +1,10 @@
 PODS:
-  - SwiftyJSON (2.3.2)
+  - Alamofire (3.1.5)
 
 DEPENDENCIES:
-  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
-
-EXTERNAL SOURCES:
-  SwiftyJSON:
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
-
-CHECKOUT OPTIONS:
-  SwiftyJSON:
-    :commit: 929539eb6a3304eaa9153ca44041a78b85bf2ee5
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+  - Alamofire (~> 3.0)
 
 SPEC CHECKSUMS:
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
 
 COCOAPODS: 0.39.0
