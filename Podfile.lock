@@ -1,10 +1,13 @@
 PODS:
+  - AKPickerView-Swift (1.0.1)
   - Alamofire (3.1.5)
 
 DEPENDENCIES:
+  - AKPickerView-Swift
   - Alamofire (~> 3.0)
 
 SPEC CHECKSUMS:
+  AKPickerView-Swift: 8509d472bb257649383c276506334a7373d3cb33
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
 
 COCOAPODS: 0.39.0
