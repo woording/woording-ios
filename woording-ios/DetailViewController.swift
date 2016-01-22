@@ -63,7 +63,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
 
-    
+     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        
+        performSegueWithIdentifier("doit", sender: nil)
+    }
     
 
 }
