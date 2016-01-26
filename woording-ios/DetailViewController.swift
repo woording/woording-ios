@@ -65,8 +65,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
      func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath)
+        // this function is called when a word from a word list is selected 
         
-        performSegueWithIdentifier("doit", sender: nil)
+    //enact behavior that by starts the display mode (the default mode for words) on cell touch
     }
     
 
