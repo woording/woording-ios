@@ -31,6 +31,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     override func viewDidLoad() {
+      
         super.viewDidLoad()
         print(currentList)
         listTableView.dataSource = self

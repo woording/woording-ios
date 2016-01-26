@@ -21,7 +21,7 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-        
+       self.splitViewController?.preferredDisplayMode = .AllVisible
        
         
         // read lists from plist
@@ -105,8 +105,7 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // If the segue is going to the DetailView
+                // If the segue is going to the DetailView
         if segue.identifier == "showDetail" {
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
