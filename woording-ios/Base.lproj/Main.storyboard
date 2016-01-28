@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -71,7 +70,11 @@
                         <barButtonItem key="backBarButtonItem" title="Lists" id="cBf-aq-oSr"/>
                         <rightBarButtonItems>
                             <barButtonItem title="quiz" id="Yrj-Jw-E98"/>
-                            <barButtonItem title="Practice" id="0Hb-h7-Iq3"/>
+                            <barButtonItem title="Practice" id="0Hb-h7-Iq3">
+                                <connections>
+                                    <segue destination="geD-va-Gvj" kind="show" id="4oO-IF-jZJ"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Play" id="H9w-1i-o1l"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -103,16 +106,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-CA-GqF">
-                                <rect key="frame" x="239" y="397" width="123" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-fN-Lhl">
+                                <rect key="frame" x="239" y="108" width="123" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="5wS-n1-euQ"/>
+                                    <constraint firstAttribute="height" constant="64" id="pAt-Ih-2es"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-fN-Lhl">
-                                <rect key="frame" x="239" y="108" width="123" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-CA-GqF">
+                                <rect key="frame" x="239" y="396" width="123" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="BgA-fN-Lhl" secondAttribute="height" multiplier="123:64" id="McC-Xt-2uI"/>
+                                    <constraint firstAttribute="height" constant="64" id="D4F-bJ-BAM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,10 +128,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="leading" secondItem="6Hs-bF-Mdj" secondAttribute="leadingMargin" constant="219" id="5ve-TF-I6Q"/>
-                            <constraint firstItem="AqI-CA-GqF" firstAttribute="top" secondItem="BgA-fN-Lhl" secondAttribute="bottom" constant="225" id="60F-ll-uXO"/>
-                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="leading" secondItem="AqI-CA-GqF" secondAttribute="trailing" constant="-123" id="Ajv-iC-PJo"/>
-                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="top" secondItem="DCF-aE-T0C" secondAttribute="bottom" constant="88" id="cb5-yz-fU3"/>
+                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="trailing" secondItem="AqI-CA-GqF" secondAttribute="trailing" id="3Og-4F-61I"/>
+                            <constraint firstItem="9kI-SU-fph" firstAttribute="top" secondItem="AqI-CA-GqF" secondAttribute="bottom" constant="140" id="BBo-Dn-nKL"/>
+                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="leading" secondItem="AqI-CA-GqF" secondAttribute="leading" id="EEq-rm-S3t"/>
+                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="centerX" secondItem="6Hs-bF-Mdj" secondAttribute="centerX" id="M3T-MF-n3i"/>
+                            <constraint firstItem="BgA-fN-Lhl" firstAttribute="top" secondItem="DCF-aE-T0C" secondAttribute="bottom" constant="88" id="YIX-9k-EhM"/>
                         </constraints>
                     </view>
                     <connections>

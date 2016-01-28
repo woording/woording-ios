@@ -21,7 +21,7 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-       self.splitViewController?.preferredDisplayMode = .AllVisible
+       self.splitViewController?.preferredDisplayMode = .Automatic
        
         
         // read lists from plist
@@ -177,5 +177,9 @@ class MasterViewController: UITableViewController {
         practice.backgroundColor = UIColor.greenColor()
         return [quiz, practice]
     }
-    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+       
+        // add code to dismiss the master view list here 
+        
+}
 }

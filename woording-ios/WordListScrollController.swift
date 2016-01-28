@@ -20,23 +20,51 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
     
     var pages : [DisplayPage] = []
     
-    
+    private func setupPageControl() {
+        let appearance = UIPageControl.appearance()
+        appearance.pageIndicatorTintColor = UIColor.grayColor()
+        appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
+        appearance.backgroundColor = UIColor.darkGrayColor()
+    }
+
     
     
     override func viewDidLoad() {
         
-            super.viewDidLoad()
-         dataSource = self
+        
+        super.viewDidLoad()
+        setupPageControl()
+        dataSource = self
+        
+        
+        
         for word in currentList.lang1.words {
-            var index = currentList.lang1.words.indexOf(word)
-            let newDisplayController = DisplayPage()
+            let storyboards = UIStoryboard(name: "Main", bundle: nil)
+           
+            let newPC = storyboards.instantiateViewControllerWithIdentifier("displayPage") as! DisplayPage
+            
+            
+            
+            
+            let index = currentList.lang1.words.indexOf(word)
+            
+            
+          
             if index != nil {
-             //   newDisplayController.word
+                newPC.word = word
+                newPC.translation = currentList.lang2.words[index!]
+                pages.append(newPC)
+               
             }
-           // print(word)
+      //  print(word)
         }
         
-        self.pages = [DisplayPage(), DisplayPage(),DisplayPage(),DisplayPage(),DisplayPage(),DisplayPage()]
+        
+        
+        
+      
+        let this = pageControllerAtIndex(3) as! DisplayPage
+        print(this.word)
         
     }
     
@@ -61,7 +89,7 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
         newDisplayController.pageIndex = index
         newDisplayController.word = self.currentList.lang1.words[index]
         newDisplayController.translation = self.currentList.lang2.words[index]
-        print(self.currentList.lang2.words[index])
+        //print(self.currentList.lang2.words[index])
        // newDisplayController.
         return newDisplayController
     }
@@ -71,13 +99,17 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
     //MARK Page View Data Source 
     // MARK: - UIPageViewControllerDataSource
    
-    func pageViewController(pageViewController: UIPageViewController,
-        viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-            return self.storyboard!.instantiateViewControllerWithIdentifier("displayPage") as! DisplayPage
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        
+            let index = pages.indexOf(viewController as! DisplayPage)
+        
+        return pages[1]
+        
     }
     
-    func pageViewController(pageViewController: UIPageViewController,
-        viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-            return self.storyboard!.instantiateViewControllerWithIdentifier("displayPage") as! DisplayPage
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        let index = pages.indexOf(viewController as! DisplayPage)
+        
+        return pages[1]
     }
 }

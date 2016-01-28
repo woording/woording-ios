@@ -74,8 +74,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     UIView.animateWithDuration(0.5) { () -> Void in
         self.splitViewController?.preferredDisplayMode = .PrimaryHidden
+        let controller = segue.destinationViewController as! WordListScrollController
+        controller.currentList = self.currentList
+        
     }
-    print("this")
+   
 }
 
 }
