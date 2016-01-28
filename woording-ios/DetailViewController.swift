@@ -71,6 +71,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //enact behavior that by starts the display mode (the default mode for words) on cell touch
     }
     
-
+ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    UIView.animateWithDuration(0.5) { () -> Void in
+        self.splitViewController?.preferredDisplayMode = .PrimaryHidden
+    }
+    print("this")
 }
 
+}

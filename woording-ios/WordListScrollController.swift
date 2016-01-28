@@ -24,17 +24,19 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
     
     
     override func viewDidLoad() {
-         print("word")
+        
             super.viewDidLoad()
+         dataSource = self
         for word in currentList.lang1.words {
             var index = currentList.lang1.words.indexOf(word)
             let newDisplayController = DisplayPage()
             if index != nil {
              //   newDisplayController.word
             }
-            print(word)
+           // print(word)
         }
         
+        self.pages = [DisplayPage(), DisplayPage(),DisplayPage(),DisplayPage(),DisplayPage(),DisplayPage()]
         
     }
     
@@ -59,6 +61,7 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
         newDisplayController.pageIndex = index
         newDisplayController.word = self.currentList.lang1.words[index]
         newDisplayController.translation = self.currentList.lang2.words[index]
+        print(self.currentList.lang2.words[index])
        // newDisplayController.
         return newDisplayController
     }
@@ -67,101 +70,14 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
     
     //MARK Page View Data Source 
     // MARK: - UIPageViewControllerDataSource
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
-        
-    {
-        
-        
-        
-        var vc = viewController as! DisplayPage
-        
-        var index = vc.pageIndex as Int
-        
-        
-        
-        
-        
-        if (index == 0 || index == NSNotFound)
-            
-        {
-            
-            return nil
-            
-            
-            
-        }
-        
-        
-        
-        index--
-        
-        return self.pages[index]
-        
-        
-        
-    }
-    
-    
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        
-        
-        
-        var vc = viewController as! DisplayPage
-        
-        var index = vc.pageIndex as Int
-        
-        
-        
-        if (index == NSNotFound)
-            
-        {
-            
-            return nil
-            
-        }
-        
-        
-        
-        index++
-        
-        
-        
-        if (index == self.pages.count)
-            
-        {
-            
-            return nil
-            
-        }
-        
-        
-        
-        return self.pages[index]
-        
-        
-        
-    }
-    
-    
-    
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
-        
-    {
-        
-        return self.pages.count
-        
-    }
-    
-    
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
-        
-    {
-        
-        return 0
-        
-    }
    
+    func pageViewController(pageViewController: UIPageViewController,
+        viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+            return self.storyboard!.instantiateViewControllerWithIdentifier("displayPage") as! DisplayPage
+    }
     
+    func pageViewController(pageViewController: UIPageViewController,
+        viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+            return self.storyboard!.instantiateViewControllerWithIdentifier("displayPage") as! DisplayPage
+    }
 }
