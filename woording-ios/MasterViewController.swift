@@ -13,30 +13,24 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var editObjects = [AnyObject]()
     
-    var allWordLists : [List] = []
-    let S = Store()
+    var allWordLists : [TranslationList] = [TranslationList(name: "Example List", language1Code: "dut", language2Code: "eng", translations: [Translation(language1Text: "Auto", language2Text: "Car")])]
+    
+    // This is unfortunately broken, Justin, read my comment inside Store.swift
+//    let S = Store()
     override func viewDidLoad() {
-        
-        
         
         
         super.viewDidLoad()
         self.splitViewController?.preferredDisplayMode = .AllVisible
         
         // read from plist via store
-        allWordLists = S.readLocalListData()
-        
-        
-        
-        
-        
-        
+        // This is unfortunately broken, Justin, read my comment inside Store.swift
+//        allWordLists = S.readLocalListData()
         
         
         // print username and password, as a test
         print(AccountManager.name)
         print(AccountManager.password)
-        
         
         
         self.title = "Lists"
@@ -74,15 +68,17 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // If the segue is going to the DetailView
         if segue.identifier == "showDetail" {
+            
             self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+            
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 // get the list corresponding to the row
                 let list = allWordLists[indexPath.row]
-                //PRINT(LIST)
+                
                 // get the DetailViewController
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                //controller.currentList = list
+                controller.currentList = list
                 
                 // Add the back button
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
@@ -105,7 +101,7 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        let list = allWordLists[indexPath.row].listName
+        let list = allWordLists[indexPath.row].name
         cell.textLabel!.text = list
         return cell
     }

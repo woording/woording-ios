@@ -9,6 +9,6 @@
 import Foundation
 
 struct Translation {
-    var word1: Word
-    var word2: Word
+    var language1Text: String
+    var language2Text: String
 }

@@ -38,27 +38,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TranslationCell" id="TKG-oN-VPH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TranslationCell" id="TKG-oN-VPH" customClass="TranslationCell" customModule="woording_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TKG-oN-VPH" id="icv-Ul-XCF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-Wy-KGV" userLabel="Word2">
-                                                    <rect key="frame" x="401" y="8" width="56" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-lK-YQZ" userLabel="Word1">
-                                                    <rect key="frame" x="38" y="8" width="241" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-lK-YQZ" userLabel="Word1">
+                                                    <rect key="frame" x="8" y="8" width="292" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.95998663651315785" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-Wy-KGV" userLabel="Word2">
+                                                    <rect key="frame" x="300" y="8" width="292" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="85Z-lK-YQZ" secondAttribute="bottom" constant="6" id="2Kh-xW-wUJ"/>
+                                                <constraint firstAttribute="topMargin" secondItem="85Z-lK-YQZ" secondAttribute="top" id="FhE-Of-Q5J"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xyc-Wy-KGV" secondAttribute="bottom" constant="6" id="HCd-Jy-ZBF"/>
+                                                <constraint firstItem="85Z-lK-YQZ" firstAttribute="leading" secondItem="icv-Ul-XCF" secondAttribute="leadingMargin" id="VVX-nB-9kD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xyc-Wy-KGV" secondAttribute="trailing" id="X0h-On-ZTc"/>
+                                                <constraint firstItem="85Z-lK-YQZ" firstAttribute="width" secondItem="xyc-Wy-KGV" secondAttribute="width" id="nAq-vO-7sS"/>
+                                                <constraint firstAttribute="topMargin" secondItem="xyc-Wy-KGV" secondAttribute="top" id="thd-B5-tTv"/>
+                                                <constraint firstItem="xyc-Wy-KGV" firstAttribute="leading" secondItem="85Z-lK-YQZ" secondAttribute="trailing" id="v44-ce-QwS"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="word1Label" destination="85Z-lK-YQZ" id="iLh-Bu-0hc"/>
+                                            <outlet property="word2Label" destination="xyc-Wy-KGV" id="7qI-f0-J1E"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

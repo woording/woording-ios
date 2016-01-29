@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87095C6B1C5BC87B00F300B2 /* TranslationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87095C6A1C5BC87B00F300B2 /* TranslationCell.swift */; };
+		87095C6D1C5BCDA700F300B2 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87095C6C1C5BCDA700F300B2 /* TranslationList.swift */; };
 		876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876955BA1C419CFC00178A52 /* AccountCredentials.plist */; };
 		876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876955BC1C419DCD00178A52 /* AccountManager.swift */; };
-		877E208F1C5B762B00AEBCCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E208E1C5B762B00AEBCCE /* Word.swift */; };
 		877E20941C5B772E00AEBCCE /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E20931C5B772E00AEBCCE /* Translation.swift */; };
 		87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060A1C41610E006C27E4 /* AppDelegate.swift */; };
 		87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060C1C41610E006C27E4 /* MasterViewController.swift */; };
@@ -48,9 +49,10 @@
 
 /* Begin PBXFileReference section */
 		194179AED617886921984BDC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		87095C6A1C5BC87B00F300B2 /* TranslationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationCell.swift; sourceTree = "<group>"; };
+		87095C6C1C5BCDA700F300B2 /* TranslationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationList.swift; sourceTree = "<group>"; };
 		876955BA1C419CFC00178A52 /* AccountCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCredentials.plist; sourceTree = "<group>"; };
 		876955BC1C419DCD00178A52 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
-		877E208E1C5B762B00AEBCCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		877E20931C5B772E00AEBCCE /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		87AE06071C41610E006C27E4 /* woording-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "woording-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AE060A1C41610E006C27E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +117,7 @@
 		877E20901C5B763400AEBCCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				877E208E1C5B762B00AEBCCE /* Word.swift */,
+				87095C6C1C5BCDA700F300B2 /* TranslationList.swift */,
 				877E20931C5B772E00AEBCCE /* Translation.swift */,
 			);
 			name = Model;
@@ -201,6 +203,7 @@
 		87BD10FF1C49B7FF00C5C383 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87095C6A1C5BC87B00F300B2 /* TranslationCell.swift */,
 				87AE06101C41610E006C27E4 /* Main.storyboard */,
 				87AE06151C41610E006C27E4 /* LaunchScreen.storyboard */,
 			);
@@ -415,7 +418,8 @@
 			files = (
 				D09ECC4A1C42564600E81EE8 /* README.md in Sources */,
 				876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */,
-				877E208F1C5B762B00AEBCCE /* Word.swift in Sources */,
+				87095C6B1C5BC87B00F300B2 /* TranslationCell.swift in Sources */,
+				87095C6D1C5BCDA700F300B2 /* TranslationList.swift in Sources */,
 				D034510F1C5B954B002F4345 /* Store.swift in Sources */,
 				877E20941C5B772E00AEBCCE /* Translation.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
