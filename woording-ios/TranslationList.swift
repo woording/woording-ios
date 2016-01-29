@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
 
-typealias LanguageCode = String
-
-struct TranslationList {
-    var name: String
-    var language1Code: LanguageCode
-    var language2Code: LanguageCode
-    var translations: [Translation]
+class TranslationList: Object {
+    dynamic var name = ""
+    dynamic var language1Code = ""
+    dynamic var language2Code = ""
+    let translations = List<Translation>()
+    
+    convenience init(name: String, language1Code: String, language2Code: String) {
+        self.init()
+        self.name = name
+        self.language1Code = language1Code
+        self.language2Code = language2Code
+    }
 }

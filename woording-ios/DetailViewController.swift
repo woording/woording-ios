@@ -12,7 +12,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var listTableView: UITableView!
     
-    
     typealias wordArray = (locale:String, words: [String])
     typealias WordList = (name : String, lang1: wordArray, lang2:wordArray)
     
@@ -60,12 +59,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TranslationCell") as! TranslationCell
+        
         cell.word1Label.text = currentList?.translations[indexPath.row].language1Text
         cell.word2Label.text = currentList?.translations[indexPath.row].language2Text
-//        cell.word2Label.text = "kek"
-        
-//        cell.word1Label.text = currentList.lang1.words[index]
-//        cell.word2Label.text = currentList.lang2.words[index]
         
         return cell
     }

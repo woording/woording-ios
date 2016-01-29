@@ -7,36 +7,21 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MasterViewController: UITableViewController {
+    
+    let realm = try! Realm()
+    lazy var translationLists: Results<TranslationList> = { self.realm.objects(TranslationList) }()
     
     var detailViewController: DetailViewController? = nil
     var editObjects = [AnyObject]()
     
-    var translationLists : [TranslationList] = [
-        
-        TranslationList(name: "Engelse woorden",
-            language1Code: "dut",
-            language2Code: "eng",
-            translations: [
-                Translation(language1Text: "Auto", language2Text: "Car"),
-                Translation(language1Text: "Boom", language2Text: "Tree"),
-                Translation(language1Text: "Explosie", language2Text: "Explosion")
-            ]),
-        
-        TranslationList(name: "German words",
-            language1Code: "dut",
-            language2Code: "ger",
-            translations: [
-                Translation(language1Text: "Auto", language2Text: "Auto"),
-                Translation(language1Text: "Kamp", language2Text: "Kampf"),
-                Translation(language1Text: "Explosie", language2Text: "Kaboom") // not acutal German lol
-            ])
-    ]
-    
     // This is unfortunately broken, Justin, read my comment inside Store.swift
-//    let S = Store()
     override func viewDidLoad() {
+        
+        // Some sample data
+        addTranslationLists()
         
         
         super.viewDidLoad()
@@ -57,6 +42,17 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+    }
+    
+    func addTranslationLists() {
+        let testList = TranslationList(name: "test list", language1Code: "eng", language2Code: "ger")
+        let testTranslation = Translation(language1Text: "car", language2Text: "auto")
+        
+        testList.translations.append(testTranslation)
+        try! realm.write {
+            realm.add(testList)
+        }
+            
     }
     
     

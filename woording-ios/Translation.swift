@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Translation {
-    var language1Text: String
-    var language2Text: String
+
+class Translation: Object {
+    dynamic var language1Text = ""
+    dynamic var language2Text = ""
+    
+    convenience init(language1Text: String, language2Text: String) {
+        self.init()
+        self.language1Text = language1Text
+        self.language2Text = language2Text
+    }
 }
