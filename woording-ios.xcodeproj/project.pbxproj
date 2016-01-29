@@ -10,7 +10,6 @@
 		87095C6B1C5BC87B00F300B2 /* TranslationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87095C6A1C5BC87B00F300B2 /* TranslationCell.swift */; };
 		87095C6D1C5BCDA700F300B2 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87095C6C1C5BCDA700F300B2 /* TranslationList.swift */; };
 		87095C6F1C5BD88200F300B2 /* TranslationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87095C6E1C5BD88200F300B2 /* TranslationListCell.swift */; };
-		874A9DE91C5BFC9000075032 /* RealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A9DE81C5BFC9000075032 /* RealmStore.swift */; };
 		876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876955BA1C419CFC00178A52 /* AccountCredentials.plist */; };
 		876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876955BC1C419DCD00178A52 /* AccountManager.swift */; };
 		877E20941C5B772E00AEBCCE /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E20931C5B772E00AEBCCE /* Translation.swift */; };
@@ -54,7 +53,6 @@
 		87095C6A1C5BC87B00F300B2 /* TranslationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationCell.swift; sourceTree = "<group>"; };
 		87095C6C1C5BCDA700F300B2 /* TranslationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationList.swift; sourceTree = "<group>"; };
 		87095C6E1C5BD88200F300B2 /* TranslationListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationListCell.swift; sourceTree = "<group>"; };
-		874A9DE81C5BFC9000075032 /* RealmStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStore.swift; sourceTree = "<group>"; };
 		876955BA1C419CFC00178A52 /* AccountCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCredentials.plist; sourceTree = "<group>"; };
 		876955BC1C419DCD00178A52 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		877E20931C5B772E00AEBCCE /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 			children = (
 				876955BA1C419CFC00178A52 /* AccountCredentials.plist */,
 				876955BC1C419DCD00178A52 /* AccountManager.swift */,
-				874A9DE81C5BFC9000075032 /* RealmStore.swift */,
 				D034510E1C5B954B002F4345 /* Store.swift */,
 			);
 			name = Store;
@@ -429,7 +426,6 @@
 				D034510F1C5B954B002F4345 /* Store.swift in Sources */,
 				877E20941C5B772E00AEBCCE /* Translation.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
-				874A9DE91C5BFC9000075032 /* RealmStore.swift in Sources */,
 				87095C6F1C5BD88200F300B2 /* TranslationListCell.swift in Sources */,
 				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
