@@ -31,6 +31,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     override func viewDidLoad() {
+      
         super.viewDidLoad()
         print(currentList)
         listTableView.dataSource = self
@@ -59,12 +60,21 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let word  = currentList.lang1.words[index]
         let trans = currentList.lang2.words[index]
         cell.textLabel!.text = word + "    " + trans
+        cell.textLabel!.textAlignment = .Right
         return cell
     }
     
 
+     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        // this function is called when a word from a word list is selected 
+        
+    //enact behavior that by starts the display mode (the default mode for words) on cell touch
+    }
     
+ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   
     
-
 }
 
+}

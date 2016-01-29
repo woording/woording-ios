@@ -10,19 +10,19 @@
 		<string>du</string>
 		<key>lang2</key>
 		<array>
-			<string>words </string>
-			<string>words </string>
-			<string>words </string>
-			<string>words </string>
-			<string>words </string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
 		</array>
 		<key>lang1</key>
 		<array>
-			<string>woords</string>
-			<string>woords</string>
-			<string>woords</string>
-			<string>woords</string>
-			<string>woords</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>the one</string>
+			<string>6</string>
 		</array>
 	</dict>
 	<key>swag</key>

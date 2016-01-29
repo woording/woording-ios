@@ -19,44 +19,48 @@ class MasterViewController: UITableViewController {
     var allWordLists : [WordList] = []
     
     override func viewDidLoad() {
-        
+       
         super.viewDidLoad()
-        
-        allWordLists.append(("name", (("this"),["sdfsdf"]), (("this"),["sdfsdf"])))
+       self.splitViewController?.preferredDisplayMode = .AllVisible
+       
         
         // read lists from plist
         var optionalDict: NSDictionary?
         if let path = NSBundle.mainBundle().pathForResource("Lists", ofType: "plist") {
             optionalDict = NSDictionary(contentsOfFile: path)
         }
+        
         if let allTheLists = optionalDict {
             for list in allTheLists {
-                let listName = list.key as! String
+                
+                let listName = list.key as! String //read list name (key for the diconaty represending the list)
+                
                 //build the lang1 array
                 let lang1Words = list.value.valueForKey("lang1") as! [String]
-                let lang1Locale = list.value.valueForKey("lang1Locale") as! String
-                
+                let lang1Locale = list.value.valueForKey("lang1Locale") as! String //grab locale
                 let tempLang1 : wordArray = (lang1Locale, lang1Words)
                 
                 
                 
                 //build the lang2 array
                 let lang2Words = list.value.valueForKey("lang2") as! [String]
-                let lang2Locale = list.value.valueForKey("lang2Locale") as! String
-                
+                let lang2Locale = list.value.valueForKey("lang2Locale") as! String //grab locale
                 let tempLang2 : wordArray = (lang2Locale, lang2Words)
                 
                 
+              
                 let newList : WordList = (listName, tempLang1, tempLang2)
+                //assemble the wordlist from the wordArrays
+                
+                
                 allWordLists.append(newList)
-                //  tempLang1.words = list.value.valueForKey("lang1") as! [String]
+                
                 
                 
                 
                 
             }
         }
-        
         
         
         
@@ -79,7 +83,7 @@ class MasterViewController: UITableViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+       
         super.viewWillAppear(animated)
     }
     
@@ -101,10 +105,9 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // If the segue is going to the DetailView
+                // If the segue is going to the DetailView
         if segue.identifier == "showDetail" {
-            
+            self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 // get the list corresponding to the row
@@ -174,5 +177,9 @@ class MasterViewController: UITableViewController {
         practice.backgroundColor = UIColor.greenColor()
         return [quiz, practice]
     }
-    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+       
+        
+        
+}
 }
