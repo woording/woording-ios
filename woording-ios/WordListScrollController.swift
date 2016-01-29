@@ -14,7 +14,7 @@ class WordListScrollController : UIPageViewController, UIPageViewControllerDataS
     typealias wordArray = (locale:String, words :[String])
     typealias WordList = (name : String, lang1: wordArray, lang2:wordArray)
     
-     var currentList: WordList = ("name", ("this", ["sdfdf"]), ("this", ["sdfsdf"]))
+    var currentList: WordList = ("name", ("this", ["sdfdf"]), ("this", ["sdfsdf"]))
     
     var mode : String = "display"
     

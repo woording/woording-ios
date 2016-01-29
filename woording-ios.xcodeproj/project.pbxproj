@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		876955BB1C419CFC00178A52 /* AccountCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876955BA1C419CFC00178A52 /* AccountCredentials.plist */; };
 		876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876955BC1C419DCD00178A52 /* AccountManager.swift */; };
+		877E208F1C5B762B00AEBCCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E208E1C5B762B00AEBCCE /* Word.swift */; };
+		877E20921C5B768400AEBCCE /* LanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E20911C5B768400AEBCCE /* LanguageCode.swift */; };
+		877E20941C5B772E00AEBCCE /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E20931C5B772E00AEBCCE /* Translation.swift */; };
 		87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060A1C41610E006C27E4 /* AppDelegate.swift */; };
 		87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060C1C41610E006C27E4 /* MasterViewController.swift */; };
 		87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE060E1C41610E006C27E4 /* DetailViewController.swift */; };
@@ -47,6 +50,9 @@
 		194179AED617886921984BDC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		876955BA1C419CFC00178A52 /* AccountCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCredentials.plist; sourceTree = "<group>"; };
 		876955BC1C419DCD00178A52 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		877E208E1C5B762B00AEBCCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		877E20911C5B768400AEBCCE /* LanguageCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCode.swift; sourceTree = "<group>"; };
+		877E20931C5B772E00AEBCCE /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		87AE06071C41610E006C27E4 /* woording-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "woording-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AE060A1C41610E006C27E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87AE060C1C41610E006C27E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		877E20901C5B763400AEBCCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				877E208E1C5B762B00AEBCCE /* Word.swift */,
+				877E20911C5B768400AEBCCE /* LanguageCode.swift */,
+				877E20931C5B772E00AEBCCE /* Translation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		87AE05FE1C41610E006C27E4 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				87BD11001C49B81A00C5C383 /* Store */,
+				877E20901C5B763400AEBCCE /* Model */,
 				87BD10FF1C49B7FF00C5C383 /* Views */,
 				87BD10FD1C49B7E700C5C383 /* Controllers */,
 				87BD10FE1C49B7F400C5C383 /* Helpers */,
@@ -398,9 +415,12 @@
 			files = (
 				D09ECC4A1C42564600E81EE8 /* README.md in Sources */,
 				876955BD1C419DCD00178A52 /* AccountManager.swift in Sources */,
+				877E208F1C5B762B00AEBCCE /* Word.swift in Sources */,
+				877E20941C5B772E00AEBCCE /* Translation.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
 				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
+				877E20921C5B768400AEBCCE /* LanguageCode.swift in Sources */,
 				D080909F1C52273A00F9BB7A /* WordListScrollController.swift in Sources */,
 				87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */,
 				D08090A11C522BBA00F9BB7A /* Mode.swift in Sources */,
