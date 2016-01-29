@@ -13,7 +13,26 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var editObjects = [AnyObject]()
     
-    var allWordLists : [TranslationList] = [TranslationList(name: "Example List", language1Code: "dut", language2Code: "eng", translations: [Translation(language1Text: "Auto", language2Text: "Car")])]
+    var translationLists : [TranslationList] = [
+        
+        TranslationList(name: "Engelse woorden",
+            language1Code: "dut",
+            language2Code: "eng",
+            translations: [
+                Translation(language1Text: "Auto", language2Text: "Car"),
+                Translation(language1Text: "Boom", language2Text: "Tree"),
+                Translation(language1Text: "Explosie", language2Text: "Explosion")
+            ]),
+        
+        TranslationList(name: "German words",
+            language1Code: "dut",
+            language2Code: "ger",
+            translations: [
+                Translation(language1Text: "Auto", language2Text: "Auto"),
+                Translation(language1Text: "Kamp", language2Text: "Kampf"),
+                Translation(language1Text: "Explosie", language2Text: "Kaboom") // not acutal German lol
+            ])
+    ]
     
     // This is unfortunately broken, Justin, read my comment inside Store.swift
 //    let S = Store()
@@ -27,8 +46,6 @@ class MasterViewController: UITableViewController {
         // This is unfortunately broken, Justin, read my comment inside Store.swift
 //        allWordLists = S.readLocalListData()
         
-        
-        // print username and password, as a test
         print(AccountManager.name)
         print(AccountManager.password)
         
@@ -74,10 +91,11 @@ class MasterViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 // get the list corresponding to the row
-                let list = allWordLists[indexPath.row]
+                let list = translationLists[indexPath.row]
                 
                 // get the DetailViewController
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                
                 controller.currentList = list
                 
                 // Add the back button
@@ -95,14 +113,23 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allWordLists.count
+        return translationLists.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        let list = allWordLists[indexPath.row].name
-        cell.textLabel!.text = list
+        // Deque a new cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TranslationListCell", forIndexPath: indexPath) as! TranslationListCell
+        
+        // Retrieve the appropiate list
+        let list = translationLists[indexPath.row]
+        
+        // Set the cell's properties to reflect the list's data
+        cell.listNameLabel.text = list.name
+        cell.language1Label.text = list.language1Code
+        cell.language2Label.text = list.language2Code
+        
+        // Return the cell
         return cell
     }
     
