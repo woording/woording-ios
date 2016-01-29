@@ -46,12 +46,12 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-lK-YQZ" userLabel="Word1">
-                                                    <rect key="frame" x="8" y="8" width="292" height="21"/>
+                                                    <rect key="frame" x="8" y="14" width="292" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-Wy-KGV" userLabel="Word2">
-                                                    <rect key="frame" x="300" y="8" width="292" height="21"/>
+                                                    <rect key="frame" x="300" y="11" width="292" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -59,12 +59,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="85Z-lK-YQZ" secondAttribute="bottom" constant="6" id="2Kh-xW-wUJ"/>
-                                                <constraint firstAttribute="topMargin" secondItem="85Z-lK-YQZ" secondAttribute="top" id="FhE-Of-Q5J"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="xyc-Wy-KGV" secondAttribute="bottom" constant="6" id="HCd-Jy-ZBF"/>
                                                 <constraint firstItem="85Z-lK-YQZ" firstAttribute="leading" secondItem="icv-Ul-XCF" secondAttribute="leadingMargin" id="VVX-nB-9kD"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="xyc-Wy-KGV" secondAttribute="trailing" id="X0h-On-ZTc"/>
                                                 <constraint firstItem="85Z-lK-YQZ" firstAttribute="width" secondItem="xyc-Wy-KGV" secondAttribute="width" id="nAq-vO-7sS"/>
-                                                <constraint firstAttribute="topMargin" secondItem="xyc-Wy-KGV" secondAttribute="top" id="thd-B5-tTv"/>
+                                                <constraint firstItem="xyc-Wy-KGV" firstAttribute="centerY" secondItem="icv-Ul-XCF" secondAttribute="centerY" id="qKs-oz-HYM"/>
+                                                <constraint firstItem="85Z-lK-YQZ" firstAttribute="centerY" secondItem="icv-Ul-XCF" secondAttribute="centerY" id="sfc-8L-50H"/>
                                                 <constraint firstItem="xyc-Wy-KGV" firstAttribute="leading" secondItem="85Z-lK-YQZ" secondAttribute="trailing" id="v44-ce-QwS"/>
                                             </constraints>
                                         </tableViewCellContentView>
