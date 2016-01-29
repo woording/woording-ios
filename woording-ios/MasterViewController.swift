@@ -22,8 +22,7 @@ class MasterViewController: UITableViewController {
         
         // Some sample data
         addTranslationLists()
-        addListsToRealm()
-        
+        WoordingService.addListsToRealm()
         
         super.viewDidLoad()
         self.splitViewController?.preferredDisplayMode = .AllVisible
