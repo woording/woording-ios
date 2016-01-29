@@ -88,11 +88,9 @@
                     <navigationItem key="navigationItem" title="List name here" id="mOI-FS-AaM">
                         <barButtonItem key="backBarButtonItem" title="Lists" id="cBf-aq-oSr"/>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="trash" id="TOL-2k-cZU">
-                                <color key="tintColor" red="1" green="0.012316326032787317" blue="0.042162859018717302" alpha="1" colorSpace="calibratedRGB"/>
-                            </barButtonItem>
-                            <barButtonItem systemItem="edit" id="BHj-xQ-yJh"/>
                             <barButtonItem style="plain" systemItem="action" id="8bj-xo-5fj"/>
+                            <barButtonItem systemItem="edit" id="BHj-xQ-yJh"/>
+                            <barButtonItem systemItem="trash" id="TOL-2k-cZU"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
