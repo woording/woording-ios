@@ -46,6 +46,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 1
     }
     
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let list = currentList {

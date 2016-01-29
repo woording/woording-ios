@@ -22,6 +22,7 @@ class MasterViewController: UITableViewController {
         
         // Some sample data
         addTranslationLists()
+        addListsToRealm()
         
         
         super.viewDidLoad()
