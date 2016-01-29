@@ -177,9 +177,4 @@ class MasterViewController: UITableViewController {
         practice.backgroundColor = UIColor.greenColor()
         return [quiz, practice]
     }
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       
-        
-        
-}
 }

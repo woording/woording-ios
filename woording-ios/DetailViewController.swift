@@ -13,7 +13,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var listTableView: UITableView!
     
     
-    typealias wordArray = (locale:String, words :[String])
+    typealias wordArray = (locale:String, words: [String])
     typealias WordList = (name : String, lang1: wordArray, lang2:wordArray)
 
     var currentList: WordList = ("name", ("this", [""]), ("this", [""]))
@@ -44,7 +44,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    //table view
+    // MARK: table view
      func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -72,9 +72,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //enact behavior that by starts the display mode (the default mode for words) on cell touch
     }
     
- override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-   
-    
-}
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+       
+        
+    }
 
 }
