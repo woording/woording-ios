@@ -19,7 +19,7 @@
 		87AE062D1C41610E006C27E4 /* woording_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */; };
 		87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */; };
 		D080909F1C52273A00F9BB7A /* WordListScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080909E1C52273A00F9BB7A /* WordListScrollController.swift */; };
-		D08090A11C522BBA00F9BB7A /* DisplayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08090A01C522BBA00F9BB7A /* DisplayPage.swift */; };
+		D08090A11C522BBA00F9BB7A /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08090A01C522BBA00F9BB7A /* Mode.swift */; };
 		D09ECC491C42564600E81EE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC471C42564600E81EE8 /* Podfile */; };
 		D09ECC4A1C42564600E81EE8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D09ECC481C42564600E81EE8 /* README.md */; };
 		D09ECC4C1C4256B500E81EE8 /* Lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = D09ECC4B1C4256B500E81EE8 /* Lists.plist */; };
@@ -64,7 +64,7 @@
 		87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		98D6DC58D17BF1CAB4167BB4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D080909E1C52273A00F9BB7A /* WordListScrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListScrollController.swift; sourceTree = "<group>"; };
-		D08090A01C522BBA00F9BB7A /* DisplayPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPage.swift; sourceTree = "<group>"; };
+		D08090A01C522BBA00F9BB7A /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		D09ECC471C42564600E81EE8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D09ECC481C42564600E81EE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D09ECC4B1C4256B500E81EE8 /* Lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lists.plist; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				87AE060C1C41610E006C27E4 /* MasterViewController.swift */,
 				87AE060E1C41610E006C27E4 /* DetailViewController.swift */,
 				D080909E1C52273A00F9BB7A /* WordListScrollController.swift */,
-				D08090A01C522BBA00F9BB7A /* DisplayPage.swift */,
+				D08090A01C522BBA00F9BB7A /* Mode.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,
 				D080909F1C52273A00F9BB7A /* WordListScrollController.swift in Sources */,
 				87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */,
-				D08090A11C522BBA00F9BB7A /* DisplayPage.swift in Sources */,
+				D08090A11C522BBA00F9BB7A /* Mode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

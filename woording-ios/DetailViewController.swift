@@ -60,6 +60,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let word  = currentList.lang1.words[index]
         let trans = currentList.lang2.words[index]
         cell.textLabel!.text = word + "    " + trans
+        cell.textLabel!.textAlignment = .Right
         return cell
     }
     
@@ -72,13 +73,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    UIView.animateWithDuration(0.5) { () -> Void in
-        self.splitViewController?.preferredDisplayMode = .PrimaryHidden
-        let controller = segue.destinationViewController as! WordListScrollController
-        controller.currentList = self.currentList
-        
-    }
    
+    
 }
 
 }

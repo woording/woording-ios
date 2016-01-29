@@ -21,7 +21,7 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-       self.splitViewController?.preferredDisplayMode = .Automatic
+       self.splitViewController?.preferredDisplayMode = .AllVisible
        
         
         // read lists from plist
@@ -83,7 +83,7 @@ class MasterViewController: UITableViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+       
         super.viewWillAppear(animated)
     }
     
@@ -107,7 +107,7 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
                 // If the segue is going to the DetailView
         if segue.identifier == "showDetail" {
-            
+            self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 // get the list corresponding to the row
@@ -179,7 +179,7 @@ class MasterViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
        
-        // add code to dismiss the master view list here 
+        
         
 }
 }
