@@ -23,16 +23,15 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         
         
+        // Setup UI
         super.viewDidLoad()
         self.splitViewController?.preferredDisplayMode = .AllVisible
         self.title = "Lists"
         
-        // Some sample data
-        addTranslationLists()
-        WoordingService.addListsToRealm()
-        
         // reload data on realm change
         notificationToken = realm.addNotificationBlock { [unowned self] note, realm in
+            
+            // Reload the tableview data when there's new data in the realm
             self.reloadData()
         }
         
@@ -41,30 +40,6 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-    }
-    
-    func addTranslationLists() {
-        let testList = TranslationList(name: "test list", language1Code: "eng", language2Code: "ger")
-        let testTranslation = Translation(language1Text: "car", language2Text: "auto")
-        
-        testList.translations.append(testTranslation)
-        try! realm.write {
-            realm.add(testList)
-        }
-            
-    }
-    
-    
-    override func viewWillAppear(animated: Bool) {
-        
-        super.viewWillAppear(animated)
-    }
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -175,6 +150,9 @@ class MasterViewController: UITableViewController {
     
     
     @IBAction func clearButtonPressed(sender: AnyObject) {
+        try! realm.write {
+            realm.deleteAll()
+        }
     }
 }
 
