@@ -17,25 +17,24 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var editObjects = [AnyObject]()
     
+    var notificationToken: NotificationToken? // used for reloading data on realm changes
+    
     // This is unfortunately broken, Justin, read my comment inside Store.swift
     override func viewDidLoad() {
+        
+        
+        super.viewDidLoad()
+        self.splitViewController?.preferredDisplayMode = .AllVisible
+        self.title = "Lists"
         
         // Some sample data
         addTranslationLists()
         WoordingService.addListsToRealm()
         
-        super.viewDidLoad()
-        self.splitViewController?.preferredDisplayMode = .AllVisible
-        
-        // read from plist via store
-        // This is unfortunately broken, Justin, read my comment inside Store.swift
-//        allWordLists = S.readLocalListData()
-        
-        print(AccountManager.name)
-        print(AccountManager.password)
-        
-        
-        self.title = "Lists"
+        // reload data on realm change
+        notificationToken = realm.addNotificationBlock { [unowned self] note, realm in
+            self.reloadData()
+        }
         
         // Set the detailViewController property to the correct detailViewController
         if let split = self.splitViewController {
@@ -164,6 +163,18 @@ class MasterViewController: UITableViewController {
         return [quiz, practice]
     }
     
+    // MARK: - Data handeling
+    func reloadData() {
+        tableView.reloadData()
+    }
     
     // MARK: - Bar button items
+    @IBAction func addButtonPressed(sender: AnyObject) {
+        WoordingService.addListsToRealm()
+    }
+    
+    
+    @IBAction func clearButtonPressed(sender: AnyObject) {
+    }
 }
+

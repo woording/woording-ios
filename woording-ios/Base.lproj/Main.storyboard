@@ -508,8 +508,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lists" id="Zdf-7t-Un8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="yt2-VF-swb"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9o7-TW-jFY"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="yt2-VF-swb">
+                            <connections>
+                                <action selector="clearButtonPressed:" destination="7bK-jq-Zjz" id="DXu-vr-qBT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9o7-TW-jFY">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="7bK-jq-Zjz" id="773-Fh-nwE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
