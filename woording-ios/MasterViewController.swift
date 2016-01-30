@@ -163,4 +163,7 @@ class MasterViewController: UITableViewController {
         practice.backgroundColor = UIColor.greenColor()
         return [quiz, practice]
     }
+    
+    
+    // MARK: - Bar button items
 }
