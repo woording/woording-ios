@@ -21,14 +21,13 @@ class woording_iosTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTokenRetrieval() {
         WoordingService.getToken {
             token in
             XCTAssert(token != nil)
         }
     }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

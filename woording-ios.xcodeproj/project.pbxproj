@@ -23,6 +23,7 @@
 		87AE06221C41610E006C27E4 /* woording_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE06211C41610E006C27E4 /* woording_iosTests.swift */; };
 		87AE062D1C41610E006C27E4 /* woording_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */; };
 		87BF1D1D1C4198CF00A8C1A6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */; };
+		87ECF75C1C5D7BF200DF43D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECF75B1C5D7BF200DF43D8 /* User.swift */; };
 		D034510F1C5B954B002F4345 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034510E1C5B954B002F4345 /* Store.swift */; };
 		D080909F1C52273A00F9BB7A /* WordListScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080909E1C52273A00F9BB7A /* WordListScrollController.swift */; };
 		D08090A11C522BBA00F9BB7A /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08090A01C522BBA00F9BB7A /* Mode.swift */; };
@@ -73,6 +74,7 @@
 		87AE062C1C41610E006C27E4 /* woording_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woording_iosUITests.swift; sourceTree = "<group>"; };
 		87AE062E1C41610E006C27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BF1D1C1C4198CF00A8C1A6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		87ECF75B1C5D7BF200DF43D8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		98D6DC58D17BF1CAB4167BB4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034510E1C5B954B002F4345 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D080909E1C52273A00F9BB7A /* WordListScrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListScrollController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				87095C6C1C5BCDA700F300B2 /* TranslationList.swift */,
 				877E20931C5B772E00AEBCCE /* Translation.swift */,
+				87ECF75B1C5D7BF200DF43D8 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				D034510F1C5B954B002F4345 /* Store.swift in Sources */,
 				877E20941C5B772E00AEBCCE /* Translation.swift in Sources */,
 				87AE060F1C41610E006C27E4 /* DetailViewController.swift in Sources */,
+				87ECF75C1C5D7BF200DF43D8 /* User.swift in Sources */,
 				87095C6F1C5BD88200F300B2 /* TranslationListCell.swift in Sources */,
 				87AE060D1C41610E006C27E4 /* MasterViewController.swift in Sources */,
 				87AE060B1C41610E006C27E4 /* AppDelegate.swift in Sources */,

@@ -145,7 +145,7 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Bar button items
     @IBAction func addButtonPressed(sender: AnyObject) {
-        WoordingService.addListsToRealm()
+//        WoordingService.addListsToRealm()
     }
     
     

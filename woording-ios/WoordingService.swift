@@ -61,7 +61,44 @@ class WoordingService {
     }
     
     
-    class func addListsToRealm() {
+    class func fetchUser(username: String, onCompletion: (username: String) -> ()) {
+        self.getToken {
+            token in
+            
+            // Setup the request
+            Alamofire.request(.POST,
+                apiAddress + username,
+                parameters: ["token": token],
+                encoding: .JSON,
+                headers: headers).responseJSON {
+                
+                response in switch response.result {
+                    
+                case .Success(let JSON):
+                    
+                    // Convert the response JSON to a NSDictionary
+                    let response = JSON as! NSDictionary
+                    
+                    let name = response.objectForKey("username")
+                    let email = response.objectForKey("email")
+                    let lists = response.objectForKey("lists")
+                    
+                    
+                    
+                // Request failed
+                case .Failure(let error):
+                    print("Error fetching user: \(error)")
+                    
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+    
+    class func addListsFromServerToRealm() {
         
         // Get a token for authentication
         self.getToken() {

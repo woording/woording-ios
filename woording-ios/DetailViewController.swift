@@ -23,9 +23,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func configureView() {
         // Update the detailview to show the correct list
-        
     }
-    
     
     override func viewDidLoad() {
       
