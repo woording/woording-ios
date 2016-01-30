@@ -61,10 +61,11 @@ class WoordingService {
     }
     
     
-    class func fetchUser(username: String, onCompletion: (username: String) -> ()) {
+    // MARK: - Methods that fetch data from API and add it to the Realm
+    class func fetchUser(username: String) {
         self.getToken {
-            token in
             
+            token in
             // Setup the request
             Alamofire.request(.POST,
                 apiAddress + username,
@@ -79,11 +80,25 @@ class WoordingService {
                     // Convert the response JSON to a NSDictionary
                     let response = JSON as! NSDictionary
                     
-                    let name = response.objectForKey("username")
-                    let email = response.objectForKey("email")
-                    let lists = response.objectForKey("lists")
+                    let name = response.objectForKey("username") as! String
+                    let email = response.objectForKey("email") as! String
+                    let translationLists = response.objectForKey("lists") as! NSArray
                     
+                    let user = User(name: name, email: email)
                     
+                    for translationList in translationLists {
+                        let name = translationList.objectForKey("listname") as! String
+                        let language1Code = translationList.objectForKey("language_1_tag") as! String
+                        let language2Code = translationList.objectForKey("language_2_tag") as! String
+                        
+                        let translationList = TranslationList(name: name, language1Code: language1Code, language2Code: langauge2Code)
+                        
+                        user.translationLists.append(translationList)
+                    }
+                    
+                    try! realm.write {
+                        realm.add(user)
+                    }
                     
                 // Request failed
                 case .Failure(let error):
@@ -91,15 +106,10 @@ class WoordingService {
                     
                 }
             }
-            
-            
         }
     }
     
-    
-    
-    class func addListsFromServerToRealm() {
-        
+    class func fetchList(username: String, listname: String) {
         // Get a token for authentication
         self.getToken() {
             
@@ -108,7 +118,7 @@ class WoordingService {
             
             // Setup the request
             Alamofire.request(.POST,
-                apiAddress + "cor/test1",
+                apiAddress + username + "/" + listname,
                 parameters: ["token": token],
                 encoding: .JSON,
                 headers: headers).responseJSON {
@@ -158,7 +168,7 @@ class WoordingService {
             }
             
         }
-       
+        
     }
     
 }
