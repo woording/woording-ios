@@ -62,7 +62,7 @@ class WoordingService {
     
     
     // MARK: - Methods that fetch data from API and add it to the Realm
-    class func fetchUser(username: String) {
+    class func fetchUser(username: String, onCompletion: () -> ()) {
         self.getToken {
             
             token in
@@ -82,23 +82,25 @@ class WoordingService {
                     
                     let name = response.objectForKey("username") as! String
                     let email = response.objectForKey("email") as! String
-                    let translationLists = response.objectForKey("lists") as! NSArray
+                    let translationListIdentifiers = response.objectForKey("lists") as! NSArray
                     
                     let user = User(name: name, email: email)
                     
-                    for translationList in translationLists {
-                        let name = translationList.objectForKey("listname") as! String
-                        let language1Code = translationList.objectForKey("language_1_tag") as! String
-                        let language2Code = translationList.objectForKey("language_2_tag") as! String
+                    for translationListIdentifier in translationListIdentifiers {
                         
-                        let translationList = TranslationList(name: name, language1Code: language1Code, language2Code: langauge2Code)
+                        let name = translationListIdentifier.objectForKey("listname") as! String
+                        let language1Code = translationListIdentifier.objectForKey("language_1_tag") as! String
+                        let language2Code = translationListIdentifier.objectForKey("language_2_tag") as! String
                         
-                        user.translationLists.append(translationList)
+                        let listIdentifier = TranslationListIdentifier(name: name, language1Code: language1Code, language2Code: language2Code)
+                        
+                        user.translationListIdentifiers.append(listIdentifier)
                     }
                     
                     try! realm.write {
                         realm.add(user)
                     }
+                    onCompletion()
                     
                 // Request failed
                 case .Failure(let error):
@@ -126,7 +128,6 @@ class WoordingService {
                 response in switch response.result {
                     
                 case .Success(let JSON):
-                    
                     
                     // Convert the response JSON to a NSDictionary
                     let response = JSON as! NSDictionary

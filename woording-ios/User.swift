@@ -12,7 +12,7 @@ import RealmSwift
 class User: Object {
     dynamic var name = ""
     dynamic var email = ""
-    let translationLists = List<TranslationList>()
+    let translationListIdentifiers = List<TranslationListIdentifier>()
     
     convenience init(name: String, email: String) {
         self.init()

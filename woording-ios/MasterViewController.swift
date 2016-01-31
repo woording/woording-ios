@@ -22,11 +22,11 @@ class MasterViewController: UITableViewController {
     // This is unfortunately broken, Justin, read my comment inside Store.swift
     override func viewDidLoad() {
         
-        
         // Setup UI
         super.viewDidLoad()
         self.splitViewController?.preferredDisplayMode = .AllVisible
         self.title = "Lists"
+        
         
         // reload data on realm change
         notificationToken = realm.addNotificationBlock { [unowned self] note, realm in
@@ -145,7 +145,19 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Bar button items
     @IBAction func addButtonPressed(sender: AnyObject) {
-//        WoordingService.addListsToRealm()
+        
+        // Fetch all lists for Cor user
+        WoordingService.fetchUser("cor") {
+            let realm = try! Realm()
+            for user in realm.objects(User) {
+                
+                // result is an actual user
+                for translationListIdentifier in user.translationListIdentifiers {
+                    WoordingService.fetchList(user.name, listname: translationListIdentifier.name)
+                }
+                
+            }
+        }
     }
     
     
