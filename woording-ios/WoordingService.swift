@@ -61,7 +61,7 @@ class WoordingService {
     }
     
     
-    // MARK: - Methods that fetch data from API and add it to the Realm
+    // MARK: - Primary fetch and add to realm methods
     class func fetchUser(username: String, onCompletion: () -> ()) {
         self.getToken {
             
@@ -110,6 +110,7 @@ class WoordingService {
             }
         }
     }
+    
     
     class func fetchList(username: String, listname: String) {
         // Get a token for authentication
@@ -168,6 +169,26 @@ class WoordingService {
                 
             }
             
+        }
+        
+    }
+    
+    // MARK: - Convenience fetch and add to Realm methods
+    
+    // TODO: Fix unsafeness of this method
+    class func fetchListsForUser(username: String) {
+        
+        // get the user by username
+        if let user = realm.objects(User).filter("name = '\(username)'").first {
+            
+            // iterate over the user's translationListIdentifiers
+            for translationListIdentifier in user.translationListIdentifiers {
+                
+                // fetch a translationList based on the translationListIdentifier's name
+                fetchList(user.name, listname: translationListIdentifier.name)
+            }
+        } else {
+            print("Error, no such user (inside fetchListsForUser)")
         }
         
     }

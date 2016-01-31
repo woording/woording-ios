@@ -146,17 +146,14 @@ class MasterViewController: UITableViewController {
     // MARK: - Bar button items
     @IBAction func addButtonPressed(sender: AnyObject) {
         
-        // Fetch all lists for Cor user
+        // Fetch all lists for cor user
         WoordingService.fetchUser("cor") {
-            let realm = try! Realm()
-            for user in realm.objects(User) {
-                
-                // result is an actual user
-                for translationListIdentifier in user.translationListIdentifiers {
-                    WoordingService.fetchList(user.name, listname: translationListIdentifier.name)
-                }
-                
-            }
+            WoordingService.fetchListsForUser("cor")
+        }
+        
+        // Fetch all lists for leon user
+        WoordingService.fetchUser("leon") {
+            WoordingService.fetchListsForUser("leon")
         }
     }
     
